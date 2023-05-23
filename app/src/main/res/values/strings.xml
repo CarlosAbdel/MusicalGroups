@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MusicalGroups</string>
+    <string name="add_album">Agregar Álbum</string>
+    <string name="txt_album_title">Álbum: %s</string>
+    <string name="album_title">Nombre del álbum</string>
+</resources>

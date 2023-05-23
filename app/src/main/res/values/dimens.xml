@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Commons dimens-->
+    <dimen name="common_dimens_4">4dp</dimen>
+    <dimen name="common_dimens_8">8dp</dimen>
+    <dimen name="common_dimens_10">10dp</dimen>
+    <dimen name="common_dimens_32">32dp</dimen>
+    <dimen name="common_dimens_52">52dp</dimen>
+    <dimen name="common_dimens_64">64dp</dimen>
+    <dimen name="common_dimens_88">88dp</dimen>
+    <dimen name="common_dimens_100">100dp</dimen>
+    <dimen name="common_dimens_120">120dp</dimen>
+    <dimen name="common_dimens_175">175dp</dimen>
+    <dimen name="common_dimens_180">180dp</dimen>
+
+
+
+    <dimen name="common_dimens_20">20dp</dimen>
+
+    <!--Commons dimens text-->
+    <dimen name="common_dimens_text_14">14sp</dimen>
+    <dimen name="common_dimens_text_18">18sp</dimen>
+</resources>
