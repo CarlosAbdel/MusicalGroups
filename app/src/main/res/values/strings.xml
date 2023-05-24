@@ -3,4 +3,8 @@
     <string name="add_album">Agregar Álbum</string>
     <string name="txt_album_title">Álbum: %s</string>
     <string name="album_title">Nombre del álbum</string>
+    <string name="txt_load_img">Cargar Carátula</string>
+    <string name="txt_year_album">Año de Lanzamiento</string>
+    <string name="txt_discografic">Sello Discográfico</string>
+    <string name="txt_name_album">Título del Álbum</string>
 </resources>

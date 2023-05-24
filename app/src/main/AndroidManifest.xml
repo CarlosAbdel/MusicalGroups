@@ -21,10 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AlbumActivity"/>
-        <activity android:name=".DetailAlbumActivity"
-            android:theme="@style/Theme.MusicalGroups.ActionBar"
-        />
+        <activity android:name=".AlbumActivity" />
+        <activity
+            android:name=".DetailAlbumActivity"
+            android:theme="@style/Theme.MusicalGroups.ActionBar" />
+        <activity android:name=".AddAlbumActivity" />
     </application>
 
 </manifest>

@@ -16,7 +16,7 @@ class AlbumsAdapter(private val albums: List<Album>) :
     RecyclerView.Adapter<AlbumsAdapter.AlbumViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AlbumViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.album_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_album, parent, false)
         return AlbumViewHolder(view)
     }
 

@@ -1,5 +1,6 @@
 package com.example.musicalgroups
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -11,12 +12,12 @@ import com.example.musicalgroups.data.DataGenerator.getAlbums
 
 class AlbumActivity : AppCompatActivity() {
     private lateinit var albumsAdapter: AlbumsAdapter
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_select_album)
+        setContentView(R.layout.activity_select_album)
 
         val lstAlbums: RecyclerView = findViewById(R.id.lst_albums)
+        val btnNewAlbum: Button = findViewById(R.id.btn_new_album)
         val artist = intent.getSerializableExtra("artista") as Artista
         val albums = getAlbums(artist)
 
@@ -25,20 +26,13 @@ class AlbumActivity : AppCompatActivity() {
         lstAlbums.apply {
             layoutManager = LinearLayoutManager(this@AlbumActivity)
             adapter = albumsAdapter
+        }
 
-//            val btnAddAlbum: Button = findViewById(R.id.btn_new_album)
-//
-//            // Agrega un evento de clic al botón para abrir la vista FragmentNewAlbum
-//            btnAddAlbum.setOnClickListener {
-//                val fragmentNewAlbum = AddAlbumFragment()
-//
-//                // Obtén el administrador de fragmentos y realiza la transacción para mostrar FragmentNewAlbum
-//                supportFragmentManager.beginTransaction()
-//                    .replace(R.id.container_layout, fragmentNewAlbum)
-//                    .addToBackStack(null)
-//                    .commit()
-//
-//            }
+        btnNewAlbum.setOnClickListener {
+            val artist = intent.getSerializableExtra("artista") as Artista
+            val intent = Intent(this@AlbumActivity, AddAlbumActivity::class.java)
+            intent.putExtra("nombreArtista", artist.nombre)
+            startActivity(intent)
         }
     }
 }

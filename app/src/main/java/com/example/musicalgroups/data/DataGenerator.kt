@@ -55,4 +55,8 @@ object DataGenerator {
     fun getDetailAlbum(disco: Album): List<Album> {
         return discos.filter { it.titulo == disco.titulo }
     }
+
+    fun addAlbum(album: Album) {
+        discos.add(album)
+    }
 }

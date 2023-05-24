@@ -12,11 +12,11 @@ import com.example.musicalgroups.AlbumActivity
 import com.example.musicalgroups.R
 import com.example.musicalgroups.data.Artista
 
-class GruposAdapter(private val artistas: List<Artista>) :
-    RecyclerView.Adapter<GruposAdapter.GruposViewHolder>() {
+class GroupsAdapter(private val artistas: List<Artista>) :
+    RecyclerView.Adapter<GroupsAdapter.GruposViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GruposViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.group_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_group, parent, false)
         return GruposViewHolder(view)
     }
 
